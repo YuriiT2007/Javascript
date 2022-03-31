@@ -1329,8 +1329,75 @@
 //   genres: ["historical prose", "adventure"],
 //   isPublic: true,
 //   rating: 8.38,
+//   country: {
+//     fara: 568,
+//     para: 785,
+//   },
+//   land: {
+//     canada: ["swiming", "music", "sci-fi"],
+//   }
 // };
+
+// const c = book.country.fara;
+// console.log(c); ////568,
+
+// const f = book.land.canada;
+// console.log(f);  выводит масив ["swiming", "music", "sci-fi"],
 // const a = book.title;
 // console.log(a);   /  a надо назвать bookTatle и в консоле будет The Last Kingdom;
 // ********************************************************/
+
+// const b = book.genres;
+// console.log(b);
+
+// const stay = book.country;
+// console.log(stay)
+/******************************************************** */
+// const user = {
+//   name: "Jacques Gluke",
+//   taog: "jgluke",
+//   location: {
+//     country: "Jamaica",
+//     city: "Ocho Rios",
+//   },
+//   hobbies: ["swiming", "music", "sci-fi"],
+// };
+
+// const a = user.location;
+// console.log(a);  масив {country: 'Jamaica', city: 'Ocho Rios'}
+
+
+// const a = user.location.country;
+// console.log(a);               Jamaica
+
+// const f = user["tag"];
+// console.log(f);
+
+// const d = user["location"];
+// console.log(d);
+
+// const s = "taog";
+// const b = user[s];
+// console.log(b);
+
+// *****************************************************
+
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  genres: ["historical prose", "adventure"],
+  isPublic: true,
+  rating: 8.38,
+};
+// book.rating = 9;
+// console.log(book);
+
+// book.genres.push("hello world");
+// console.log(book.genres);
+
+book.dadada = 90;
+book.trnslete = ["ua","ru"]
+console.log(book);
+
+
 
