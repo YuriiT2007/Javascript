@@ -1382,22 +1382,78 @@
 
 // *****************************************************
 
-const book = {
-  title: "The Last Kingdom",
-  author: "Bernard Cornwell",
-  genres: ["historical prose", "adventure"],
-  isPublic: true,
-  rating: 8.38,
-};
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
 // book.rating = 9;
 // console.log(book);
 
 // book.genres.push("hello world");
 // console.log(book.genres);
 
-book.dadada = 90;
-book.trnslete = ["ua","ru"]
-console.log(book);
+// book.dadada = 90;
+// book.trnslete = ["ua","ru"]
+// console.log(book);
 
 
+// ****************************************************
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
 
+
+// book.FAFa = 932;
+// book.dada = ["ru", "ua"];
+
+// console.log(book.FAFa);
+// console.log(book.dada)
+
+// const a = "ghh jhuh"
+// const user = {
+//   a: a,
+// };
+
+
+// console.log(user.a)
+// *************************************************
+// const proNano = "name";
+// const user = {
+//   age: 25,
+//   [propName]: "Генри Сибола",
+// }
+// console.log(user.neme)
+//************************************************
+// const a = {
+//   books: ["The Last hhhKind", "Drim Guardin"],
+//   getBooks(o) {
+    
+//     console.log(a.books.push(o))
+//   console.log(a.books);
+//   },
+
+// };
+// a.getBooks("hgjfkd")
+// console.log(a.books)
+// bookShelf.getBooks()
+// ********************************************
+
+// / ✅ Логически и синтаксически сгруппированные сущности
+const bookShelf = {
+  books: ["The Last Kingdom", "Dream Guardian"],
+  // Это метод объекта
+  getBooks() {
+    console.log("Этот метод будет возвращать все книги - свойство books");
+  },
+  // Это метод объекта
+  addBook(bookName) {
+    console.log("Этот метод будет добавлять новую книгу в свойство books");
+  },
+};
