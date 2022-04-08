@@ -1446,14 +1446,191 @@
 // ********************************************
 
 // / ✅ Логически и синтаксически сгруппированные сущности
-const bookShelf = {
-  books: ["The Last Kingdom", "Dream Guardian"],
-  // Это метод объекта
-  getBooks() {
-    console.log("Этот метод будет возвращать все книги - свойство books");
-  },
-  // Это метод объекта
-  addBook(bookName) {
-    console.log("Этот метод будет добавлять новую книгу в свойство books");
-  },
-};
+// const bookShelf = {
+//   books: ["The Last Kingdom", "Dream Guardian"],
+//   // Это метод объекта
+//   getBooks() {
+//     console.log("Этот метод будет возвращать все книги - свойство books");
+//   },
+//   // Это метод объекта
+//   addBook(bookName) {
+//     console.log("Этот метод будет добавлять новую книгу в свойство books");
+//   },
+// };
+
+
+// bookShelf.getBooks();
+// bookShelf.addBook("Новая книга");
+// **********************************
+// const bookShelf = {
+//   books: ["The Last Kingdom"],
+//   getBooks() {
+//     console.log(this);
+//   },
+// };
+// bookShelf.getBooks();
+
+// const pipiska = {
+//   cat: 15,
+//   dog: 20,
+//   log: 25,
+// }
+// const pipiska2 = {
+//   cat: 444,
+//   dog: 3,
+//   log: 555,
+// }
+// const pipiska3 = {
+//   cat: 4,
+//   dog: 3,
+//   log: 333,
+//   gog:"gfg"
+// }
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+
+//   const v =  Object.values(salaries)
+//   for (let nan of v) {
+//     totalSalary += nan;
+//   }
+//   console.log(totalSalary)
+//   return totalSalary
+  
+// }
+//   //60
+// const ff = countTotalSalary(pipiska3)
+//  ************************************
+// JS V2 block-3----16
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//   const val = Object.values(salaries);
+//   for (let a of val){
+//   totalSalary += a;
+// }
+//   // Change code above this line
+//   return totalSalary;
+// }
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+
+// ********************************************
+// 17 mod 3
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (let color of colors){
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+
+// }
+
+// *********************************************8
+
+
+// var sports = ['футбол', 'бейсбол'];
+// var total = sports.push('американский футбол', 'плавание');
+
+
+// console.log(sports)
+
+// ***********************************************
+
+
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+// console.log(products);
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+//   let a = null;
+//   for (const pr of products) {
+//     if (productName === pr.name) {
+//       a = pr.price;
+//     }
+//   }
+//   return a;
+//   // Change code above this line
+// }
+// console.log(getProductPrice('Двигатель'));
+
+
+
+// function getProductPrice(productName) {
+//    // Пиши код ниже этой строки
+//    let value = null;
+//    for (product of products ) {
+//       if (productName === product.name) {
+//  	value = product.price;
+//       }
+//    }
+//      return value;
+
+//    // Пиши код выше этой строки
+//  }
+//  console.log(getProductPrice('Двигатель'));
+
+
+
+
+
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+  // Ключ
+  // console.log(book[key]);
+  // Значение свойства с таким ключом
+//   console.log(book[key]);
+// }
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смешного человека",
+//     author: "Федор Достоевский",
+//     rating: 7.75,
+//   },
+// ];
+
+
+// for (const book of books) {
+//   // Объект книги
+//   // console.log(book);
+//   // Название
+//   // console.log(book.title);
+//   // Автор
+//   // console.log(book.author);
+// //   // Рейтинг
+// //   console.log(book.rating);
+// }
+
