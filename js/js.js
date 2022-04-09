@@ -1634,3 +1634,125 @@
 // //   console.log(book.rating);
 // }
 
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   const a = [];
+//   for (const product of products) {
+//     // console.log(product);
+    
+//     for (const key in product) {
+//   //     console.log(key);
+//   // console.log(propName)
+//       if (propName === key) {
+//       a.push(product[key]);
+//       }
+//   //   else {
+//   //     return a;
+//   //  }
+
+//     }
+//     console.log(a)
+//     }
+
+//   // // Change code above this line
+// }
+// getAllPropValues('name')
+
+
+
+
+
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   const a = [];
+//   // Change code below this line
+//   for (const product of products) {
+//     console.log(product[propName]);
+//     if (product[propName]) {
+//       a.push(product[propName]);
+//     }
+//     return a;
+// }
+ 
+
+//   // Change code above this line
+// }
+// console.log(getAllPropValues("name"));
+
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+// const array = [];
+// for (let product of products){
+//   let arraykeys = Object.keys(product);
+//   console.log(arraykeys.includes(propName));
+//   if (arraykeys.includes(propName)) {
+//     array.push(product[propName]);
+// }
+// }
+
+//   return array;
+//   // Change code above this line
+// }
+// console.log(getAllPropValues("name"))
+
+
+// const sdf = ["fsra", "para", "shara", "dyra"];
+// console.log(sdf.includes("fsra"));
+
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function addElement(newArray,name,price,quantity) {
+//   const copyArray = [...newArray]
+//   const newobg = { name: name, price: price, quantity: quantity };
+//   copyArray.push(newobg);
+//   return copyArray;
+// }
+// console.log(addElement(products,'andrey',34,22));
+// console.log(products)
+
+
+
+// const data = [];
+
+// function operatorBase(emptydata, name, oper, tarif, bezlim) {
+//   const newobj = { username: name, mobop: oper, stoim: tarif, cifra: bezlim }
+//   emptydata.push(newobj)
+//   return emptydata
+// }
+
+// console.log(operatorBase(data, "max", "bil", 700, false))
+// console.log(operatorBase(data, "max", "bil", 700, false))
+// console.log(operatorBase(data, "max", "bil", 700, false))
+// console.log(operatorBase(data, "max", "bil", 700, false))
