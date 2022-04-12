@@ -1756,3 +1756,129 @@
 // console.log(operatorBase(data, "max", "bil", 700, false))
 // console.log(operatorBase(data, "max", "bil", 700, false))
 // console.log(operatorBase(data, "max", "bil", 700, false))
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   let neArray
+//   // Пиши код ниже этой строки
+//   for (let product of products) {
+//     if ( nearray === product.name){
+//       return
+//   }
+// }
+
+
+//   // Пиши код выше этой строки
+// }
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
+//   let a = 0;
+//   for (let product of products) {
+//     if (productName === product.name) {
+
+//       a = product.price * product.quantity;
+//       console.log(a);
+//     }
+   
+// }
+//  return a;
+ 
+//   // Пиши код выше этой строки
+// }
+// console.log(calculateTotalPrice("Radar"))
+
+
+
+// const temps = [14, -4, 25, 8, 11];
+// console.log(...temps);
+// console.log(...temps);
+
+// const animal = {
+//   legs: 4,
+// };
+// const dog = Object.create(animal);
+// dog.name = "Манго";
+
+// console.log(dog); // {name: 'Манго'}
+// // console.log(dog.name); // 'Манго'
+// // console.log(dog.legs); // 4
+
+// const num1 = 5;
+// const num2 = 10;
+// let biggerNumber =  num1 > num2 ? num1 : num2;
+
+// if (num1 > num2) {
+//   biggerNumber = num1;
+// } else {
+//   biggerNumber = num2;
+// }
+
+// console.log(biggerNumber);
+
+// **********************************************************8?
+// const firstBook = {
+//   title: "Последнее королевство",
+//   coverImage:
+//     "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+// };
+
+// const {
+//   title: firstTitle,
+//   coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+// } = firstBook;
+
+// console.log(firstTitle); // Последнее королевство
+// console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+
+// const secondBook = {
+//   title: "Сон смешного человека",
+// };
+
+// const {
+//   title: secondTitle,
+//   coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+// } = secondBook;
+
+// console.log(secondTitle); // Сон смешного человека
+// console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+// const firstBook = {
+//   title: "Последнееeee королевство",
+//   coverImage:
+//     "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+// };
+// console.log(firstBook.title)
+const {
+  title: firstTitle,
+  coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+} = firstBook;
+
+// console.log(firstTitle); // Последнее королевство
+// console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+
+// const secondBook = {
+//   title: "Сон смешного человека",
+// };
+
+// const {
+//   title: secondTitle,
+//   coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+// } = secondBook;
+
+// console.log(secondTitle); // Сон смешного человека
+// console.log(secondCoverImage); // https://via.placeholder.com/640/480
