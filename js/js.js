@@ -1863,10 +1863,10 @@
 //     "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
 // };
 // console.log(firstBook.title)
-const {
-  title: firstTitle,
-  coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
-} = firstBook;
+// const {
+//   title: firstTitle,
+//   coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+// } = firstBook;
 
 // console.log(firstTitle); // Последнее королевство
 // console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
@@ -1882,3 +1882,112 @@ const {
 
 // console.log(secondTitle); // Сон смешного человека
 // console.log(secondCoverImage); // https://via.placeholder.com/640/480
+// ****************************************************************************
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// const highYesterday = highTemperatures.yesterday;
+// const highToday = highTemperatures.today;
+// const highTomorrow = highTemperatures.tomorrow;
+// const highIcon = highTemperatures.icon;
+
+// const { yesterday: highYesterday,
+//   today: highToday,
+//   tomorrow: highTomorrow,
+// icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
+
+// // Change code above this line
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+
+// ***************************************************************
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+// ];
+
+// for (const book of books) {
+//   console.log(book.title);
+//   console.log(book.author);
+//   console.log(book.rating);
+// }
+  
+
+// for (const book of books) {
+//   const { title, author, rating } = book
+
+//   console.log(title);
+  // console.log(author);
+  // console.log(rating);
+// }
+
+// for (const { title, author, rating } of books) {
+//    console.log(title);
+// }
+
+// ***********************************************************8
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+
+// const highToday = forecast.today.high;
+// const lowToday = forecast.today.low;
+// const todayIcon = forecast.today.icon;
+
+// const highTomorrow = forecast.tomorrow.high;
+// const lowTomorrow = forecast.tomorrow.low;
+// const tomorrowIcon = forecast.tomorrow.icon;
+
+// const { today: { low: lowToday, high: highToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg" },
+//   tomorrow: { low: lowTomorrow, high: highTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }, } = forecast;
+
+
+
+// ******************************************************************
+
+// Change code below this line
+// function calculateMeanTemperature(forecast) {
+//   const todayLow = forecast.today.low;
+//   const todayHigh = forecast.today.high;
+//   const tomorrowLow = forecast.tomorrow.low;
+//   const tomorrowHigh = forecast.tomorrow.high;
+
+//   const { today: { low: todayLow, high: todayHigh }, tomorrow: { low: tomorrowLow, high: tomorrowHigh }, } = forecast;
+  
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// const {today:{low: todayLow, high:todayHigh}, tomorrow:{low: tomorrowLow, high: tomorrowHigh}, } = forecast;
+
+// *********************************************************************
+
+
+const scores = [89, 64, 42, 17, 93, 51, 26];
+// Change code below this line
+const bestScore = scores;
+const worstScore = scores;
+ Math.max([89, 64, 42, 17, 93, 51, 26]);
+
