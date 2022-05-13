@@ -1985,9 +1985,358 @@
 // *********************************************************************
 
 
-const scores = [89, 64, 42, 17, 93, 51, 26];
-// Change code below this line
-const bestScore = scores;
-const worstScore = scores;
- Math.max([89, 64, 42, 17, 93, 51, 26]);
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = scores;
+// const worstScore = scores;
+//  Math.max([89, 64, 42, 17, 93, 51, 26]);
+// *********************************************************************
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores,...secondGroupScores,...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+// console.log(worstScore)
+// *******************************************************************
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = {...defaultSettings,...overrideSettings};
 
+// console.log(finalSettings)
+// ************************************************************
+  
+
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+
+//   // Change code above this line
+// }
+// retern (...data);
+
+// ****************************************************************************
+// // Change code below this line
+// function add(...args) {
+//   // Change code above this line
+//   let sum = 0;
+// for (let nam of args){
+// sum += nam;
+// }
+// return sum;
+// }
+// ***************************************************************************************
+
+
+
+// function addOverNum(firstNumber, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (firstNumber < arg){
+//     total += arg;
+    
+//   }
+  
+//   }
+//   return total;
+//   // Change code above this line
+// }
+// ********************************************************************************************
+
+// function findMatches(firstNumber, ...args) {
+//   const matches = []; // Don't change this line
+//   console.log(firstNumber);
+//   console.log( args);
+//   for (let i = 0; i < firstNumber.length; i++) {
+//     console.log(firstNumber[i]);
+//     if (args.includes(firstNumber[i])) {
+//       matches.push(firstNumber[i]);
+//     }
+//   }
+  
+//   console.log(matches);
+//   // Change code above this line
+//   // return matches;
+// }
+// findMatches([1, 2, 7, 4, 5], 1, 8, 2, 7)
+
+// ***************************************************
+
+// // Change code below this line
+// function findMatches(firstNumber, ...args) {
+//   const matches = []; // Don't change this line
+//   for (let i = 0; i < firstNumber.length; i++) {
+//   // Change code above this line
+//   if (args.includes(firstNumber[i])) {
+//       matches.push(firstNumber[i]);
+    
+//     }
+     
+//   }
+//     return matches;
+//     }
+// **************************************************************
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   updateBook(oldName, newName){
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+//   removeBook(bookName){
+//     return `Deleting book ${bookName}`;
+//   }
+//   // Change code above this line
+// };
+// *******************************************************************
+// const bookShelf = {
+//   books: ["Последнее королевство"],
+//   getBooks() {
+//      return this.books;
+//   },
+ 
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//   },
+//   // removeBook(bookName) {
+//   //   const bookIndex = this.books.indexOf(bookName);
+//   //   this.books.splice(bookIndex, 1);
+//   // },
+// };
+
+// console.log(bookShelf.getBooks()); // []
+// bookShelf.addBook("Мгла");
+// // bookShelf.addBook("Страж снов");
+// // console.log(bookShelf.getBooks()); // ["Последнее королевство", "Мгла", "Страж снов"]
+// // bookShelf.removeBook("Мгла");
+// // console.log(bookShelf.getBooks()); // ["Последнее королевство", "Страж снов"]
+
+
+// *********************************************************************************
+
+// (const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+
+//  const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(bookIndex, 1,newName );
+
+//     // Change code above this line
+//   },
+  
+// };
+// *******************************************************************************
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+// getPotions(){
+//   return this.potions;
+// }
+//   // Change code above this line
+// };
+
+// *******************************************************************
+// 38
+
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+// this.potions.push(potionName)
+
+
+//     // Change code above this line
+//   },
+// };
+// ******************************************************
+// 39
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     const a = this.potions.indexOf(potionName);
+//     this.potions.splice(a, 1, );
+
+//     // Change code above this line
+//   },
+// };
+// ************************************************************
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     if (this.potions.includes(newPotion)) {
+//       return `Error! Potion ${newPotion} is already in your inventory!`;
+//     }
+
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     const potionIndex = this.potions.indexOf(potionName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${potionName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1);
+//   },
+//   updatePotionName(oldName, newName) {
+//     const potionIndex = this.potions.indexOf(oldName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${oldName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1, newName);
+//   },
+//   // Change code above this line
+// };
+// *************************************************************************************
+
+
+// const atTheOldToad = {
+// 	  potions: [
+// 	    { name: "Speed potion", price: 460 },
+// 	    { name: "Dragon breath", price: 780 },
+// 	    { name: "Stone skin", price: 520 },
+// 	  ],
+// 	  // Change code below this line
+// 	  getPotions() {
+// 		    return this.potions;
+// 		  },
+
+// 		  addPotion(newPotion) {
+// 		    for (const el of this.potions) {
+// 		   if (el.name === newPotion.name) {
+// 		      return `Error! Potion ${newPotion.name} is already in your inventory!`;
+// 		      }
+// 		}
+// 		    this.potions.push(newPotion);
+// 		  },
+
+// 		  removePotion(potionName) {
+// 		    const {potions} = this;
+
+// 		    for (let i = 0; i < potions.length; i += 1) {
+// 		      if (potionName === potions[i].name) {
+// 		      potions.splice(i, 1);
+// 		      }
+
+// 		    }
+// 		return `Potion ${potionName} is not in inventory!`;
+// 		  },
+// 		  updatePotionName(oldName, newName) {
+
+// 		    for(const potion of this.potions) {
+// 		       if (potion['name'] === oldName) {
+// 			 potion['name'] = newName;
+// 		       }
+// 		    }
+// 		  }
+// 	  // Change code above this line
+// 	};
+// // 	console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }))
+// //
+// **********************************************************************
+
+
+// const fnA = function (message, callback) {
+//   console.log(message);
+//   console.log(callback);
+//   callback(100);
+// };
+
+// const fnB = function(namber) {
+//   console.log('лог віведен на екран', namber);
+// };
+
+
+
+// fnA("uywgwq", fnB);
+// *****************************************************************************
+  
+// const doMath = function (a, b, callback) {
+
+//     const result = callback(a, b);
+//     console.log(result);
+// };
+
+
+
+// const sum =
+
+// doMath(10, 4, function (x, y) {
+//   return x + y;
+// })
+// doMath(10, 4, function (x, y) {
+//   return x - y;
+// });
+
+
+// *****************************************************************************
+
+// const buttonRef = document.querySelector("button");
+// // const handleBtnClick = function () {
+// //   console.log('Клик поooo кнопке' + Date.now());
+// // };
+// buttonRef.addEventListener(`click`, function () {
+//   console.log('Клик поooo кнопке' + Date.now());
+
+// });
+// ***********************************************************************************
+
+// const onGetPositionSucces = function (position) {
+//   console.log(`это вызов onGetPositionSuccess`);
+//   console.log(position);
+// };
+
+// const onGetPositionError = function (error) {
+//  console.log(error);
+// };
+
+// window.navigator.geolocation.getCurrentPosition(
+//   onGetPositionSucces, onGetPositionError);
+// ********************************************************************
+
+// function getCurrentPosition(onError, onSuccess) {
+//   if (true) {
+//     onSuccess({все ок})
+//   }
+//   else {
+//     onError({обьект ошибки})
+//   }
+// }
+// ***************************************************************
