@@ -2340,3 +2340,186 @@
 //   }
 // }
 // ***************************************************************
+
+// const callback = function () {
+//   console.log(`Через 30 сек колбека в таймауте`)
+// }
+// console.log(`В коде перед таймаутом`)
+
+// setTimeout(callback, 7000);
+// console.log(`В коде после таймаута`)
+
+
+// callback(12, 13);
+// ***************************************************************
+
+// const filter = function (array,test) {
+//   const filteredArray = [];
+//   for (const el of array) {
+//     console.log(test(el));
+//     // const passed = test(el);
+//     // // if (passed) {
+//     //    filteredArra.push(el);
+//     // }
+//   }
+//   return filteredArray;
+// }
+
+// const callback1 = function (value) {
+//   return value >= 3;
+// }
+
+// const r1 = filter([1, 2, 3, 4, 5],callback1);
+// console.log(r1);
+
+// // const r2 = filter(filter([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+// // console.log(r2);
+
+// ********************************************************
+
+// const fnA = function () {
+//   const innerVarible = `Значение внуиренней переменной функции fnA`;
+//   const inerFunction = function () {
+//     console.log(innerVarible)
+//     console.log(`Это вызов000000000000000000 inerFunction`)
+//   };
+//   return inerFunction;
+// }
+// const fnB = fnA();
+// console.log(fnB);
+
+
+
+// const makeSheff = function (name) {
+//   const makeDish = function (dish) {
+//     console.log(`${name} говорит ${dish}`)
+//   }
+//   return makeDish;
+// }
+// const mango = makeSheff("Mango");
+// console.dir(mango);
+
+// const makeSheff = function (name) {
+//   const innverVar = 555;
+//   const message = "hello";
+
+//   const makeDish = function (dish) {
+//     console.log(message);
+//     console.log(innerVar);
+//     console.log(`${name} готовит  ${dish}`);
+
+//   };
+//   return makeDish;
+// };
+// const FloatingPoint = 3.456789;
+// const someInt = Math.round(floatingPoint);
+// const withDecimals = Number(floatingPoint.toFixed(2));
+
+
+// const rounder = function (number, plases) {
+//   return Number(number.toFixed(plases))
+// };
+// console.log(rounder(3.4567, 2));
+// console.log(rounder(3.4567, 3));
+// console.log(rounder(5.123, 3));
+
+
+
+// const rounder = function (places) {
+//   return function (number) {
+//     return Number(number.toFixed(places))
+// }
+// }
+
+
+// const rounder2 = rounder(2);
+// const rounder3 = rounder(3);
+
+
+// const raunder = function (plases) {
+//   return function (namber) {
+//     return Number(number.toFixed(places));
+//   };
+// };
+
+// const rounder2 = rounder(2);
+// const rounder3 = rounder(3);
+
+
+// console.log(rounder2(3.4586));
+// console.log(rounder3(4.4855));
+// console.log(rounder2(7.5454));
+
+
+
+// const add = function (a, b, c,) {
+//   console.log(a, b, c);
+//   return a + b + c;
+// }
+
+// console.log(add(5, 10, 15));
+
+
+// const add = function (a, b, c) {
+  
+//   return a + b + c;
+// };
+
+// const addArrow = (a, b, c) => {
+//   console.log(`hdhdjdj`);
+//   return a + b + c;
+// };
+
+// // const addArrow = (a, b, c);
+// console.log(add(5, 10, 15));
+
+
+// const fnA = function () {
+//   return {
+//     a: 5,
+//   };
+// };
+
+// console.log(fnA());
+
+// const arrowFnA = () => ({arrowA: 5});
+// console.log(arrowFnA());
+
+
+// const onGetPositionSuccess = (position) => {
+//   console.log("Это вызов oneGetPositionError");
+//   console.log(position);
+// };
+
+// const oneGetPositionError = (error) => {
+//   console.log("Это вызов onGetPossitionError")
+//   console.log(error);
+// };
+
+// window.navigator.geolocation.getCurrentPosition(oneGetPositionSuccccess, oneGetPositionError)
+
+
+// const filter = function (array, test) {
+//   const filteradArray = [];
+
+//   for (const el of array) {
+//     console.log(el);
+//     const passed = test(el);
+//     if (passed) {
+//       filteredArray.push(el);
+//     }
+//   }
+//   return filteradArray;
+// };
+
+// const callback1 = function (value) {
+//   return value >= 3;
+// };
+
+// const r1 = filter([1, 2, 3, 4, 5], callback1);
+// console.log(r1);
+
+// const callback2 = function(value)
+
+const r1 = filter([1, 2, 3, 4, 5], value => value >= 3);
+console.log(r1);
