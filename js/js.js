@@ -2521,5 +2521,25 @@
 
 // const callback2 = function(value)
 
-const r1 = filter([1, 2, 3, 4, 5], value => value >= 3);
-console.log(r1);
+// const r1 = filter([1, 2, 3, 4, 5], value => value >= 3);
+// console.log(r1);
+
+// const User = name => {
+//   this.name = name;
+// };
+
+// console.log(new User("Mango"));
+
+const objA = {
+  x: 5,
+  showX() {
+    console.log(this.x);
+    const objB = {
+      y: 10,
+      showThis() {
+        console.log("this в obj.showThis",this)
+      }
+    }
+  },
+};
+objA.showX();
