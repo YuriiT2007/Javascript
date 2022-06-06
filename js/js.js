@@ -2530,16 +2530,372 @@
 
 // console.log(new User("Mango"));
 
-const objA = {
-  x: 5,
-  showX() {
-    console.log(this.x);
-    const objB = {
-      y: 10,
-      showThis() {
-        console.log("this в obj.showThis",this)
-      }
-    }
-  },
-};
-objA.showX();
+// const objA = {
+//   x: 5,
+//   showX() {
+//     console.log(this.x);
+//     const objB = {
+//       y: 10,
+//       showThis() {
+//         console.log("this в obj.showThis",this)
+//       }
+//     }
+//   },
+// };
+// objA.showX();
+
+// const onlineAndSorted = players
+//   .filter(player => player.isOnline)
+//   .sort((prevPlayer, nextPlayer) => nextPlayer.rank - nextPlayer.rank);
+// console.table(onlineAndSorted);
+
+// const updatePlayers = players.map(player => {
+//   return player.id === playerIdToUpdate
+//     ? { ...player, timePlayed: player.timePlayed + 50 }
+//     : player,
+// );
+// console.table(updatedPlayers);
+
+
+// const numders = [5, 6, 7, 20, 34];
+
+// numders.forEach(function (number, index, array) {
+//   console.log(number,"kj", "rp", "ut" );
+//  });
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// const doubledNums = numbers.map(function (number) {
+//   console.log(number);
+//   return number * 2;
+// });
+
+
+// console.log("numbers", numbers);
+// console.log("doubledNums", doubledNums);
+
+
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-1", name: "Poly", timePlayed: 470, points: 18, online: false },
+//   { id: "player-1", name: "Kivi", timePlayed: 210, points: 62, online: false },
+  
+
+// ];
+
+
+// const playerNames = players.map(player => player.name);
+// console.log('playerNames', playerNames);
+
+
+// const plyerIds = player.map(player => player.id);
+// console.log('playerIds', playerIds);
+
+// const upatedPlayers = players.map(player => {
+//   console.log(player);
+//   return {
+//     ...player,
+//   };
+// });
+
+// console.table(upatedPlayers);
+// console.log(updatedPlayers);
+
+
+// const playerNames = players.map(player => {
+//   console.log(player);
+//   return player.name;
+// });
+
+// console.log("playerNames", playerNames);
+
+// const updatedPlayers = players.map(player => {
+//   if (playerIdToUpdate === player.id) {
+//     return {
+//       ...player,
+//       timePlayed: player.timePlayed + 100,
+//     };
+//   }
+//   return player;
+// });
+
+// const updatePlayers = players.map(player => {
+//   if (playerIdToUpdate === player.id) {
+//     return {
+//       ...player,
+//       timePlayed: player.timePlayed + 100,
+//     };
+//   }
+//   return player;
+// });
+
+
+
+// const updatePlayers = player.map(player => {
+//   if (playerIdToUpdate === player.id) {
+//     return {
+//       ...player,
+//       timePlayed: player.timePlayed + 100,
+//     };
+//   }
+//   return player;
+// })
+
+
+
+// const updatedPlayers = players.map(player =>
+//   playerIdToUpdate === player.id
+//     ? {
+//       ...player, timePlayed: player.timePlayed + 100
+//     }
+//     : player,
+// );
+
+
+// const updatedPlayers = players.map(player =>
+//   playerIdToUpdate === player.id
+//     ? { ...player, timePlayed: player.timePlayed + 100 }
+//     : player,
+// );
+
+
+// ***********************************************************
+// const numbers = [5, 10, 15, 25, 25,];
+
+// const doubledNums = numbers.map(number => {
+//   return number * 7;
+// });
+// const players = [
+//   { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+//   { id: 'player-2', name: 'Poly', timePlayed: 470, points: 53, online: false },
+//   { id: 'player-3', name: 'Mango', timePlayed: 310, points: 47, online: false },
+//   { id: 'player-4', name: 'Mango', timePlayed: 380, points: 12, online: false },
+
+// ];
+
+// console.log(players);
+
+
+
+
+
+
+// const playerIdToUpdate = 'player-3';
+// const timePlayed = '500';
+
+// const updatedPlayers = players.map(player => {
+//   if (playerIdToUpdate === player.id) {
+//     return {
+//       ...player,
+//       timePlayed: player.timePlayed + 100,
+//     };
+//   }
+//   return player;
+// });
+
+
+// console.table(updatedPlayers);
+
+// **********************************************************
+
+
+// const playerIdToUpdate = 'player-3';
+
+
+// const updatePlayers = players.map(player => {
+//   if (playerIdUpdate === player.id) {
+//     return {
+//       ...player,
+//       timePlaye: player.time + 100,
+//     };
+//   }
+//   return player;
+// }
+// );
+
+
+// console.table(updatedPlayers);
+
+
+
+// const tagsStats = allTags.reduse((acc, tag) => {
+//   console.log(acc);
+//   if (acc[tag]) {
+//     acc[tag] += 1;
+//     return acc;
+//   }
+//   acc[tag] = 1;
+
+//   return acc;
+// }, {});
+
+
+// const planets = ["Zemlya", "Mars", "Venera", "Yupiter"];
+
+// const a = planets.map(fa => fa.toUpperCase());
+
+// console.log(a);
+
+
+
+
+// const s = planets.map(planet => planet.toLowerCase());
+// console.log(s)
+
+
+// const students = [
+//   { name: "Mango", score: 83 },
+//   { name: "Gjkb", score: 59 },
+//   { name: "Ajaks", score: 37 },
+//   { name: "Xyuston", score: 64 },
+// ];
+
+// const h = students.map(o => o.score +1);
+// console.log(h);
+
+
+// const students = [
+//   { name: "Mango", courses: ["Matematica", "fizika"] },
+//   { name: "Mango", courses: ["matematica", "fizika"] },
+//   { name: "Mango", courses: ["matematica", "fizika"] },
+// ];
+
+// const j = students.map(student => student.courses);
+// console.log(j);
+
+
+// const dirtyMultiply = (array, value) => {
+//   for (let i = 0; i < Array.length; i += 1) {
+//     array[i] = array[i] * value;
+//   }
+// };
+
+// const numbers = [1, 2, 3, 4, 5];
+// dirtyMultiply(numbers, 3);
+
+// console.log(numbers);
+
+// *************************************************
+
+// const numbers = [1, 9, 6, 2, 3]
+// numbers.sort();
+// console.log( numbers); //// [1, 2, 3, 6, 9]
+
+// const letters = ["b", "B", "a", "A"];
+// letters.sort();
+// // console.log("letters", letters); //// ['A', 'B', 'a', 'b']
+
+
+// ****************************************************************
+
+// const numbers = [1, 9, 6, 2, 3];
+// // numbers.sort();
+
+// // console.log(`numbersss`, numbers);
+
+// const letters = [`b`, `B`, `a`, `A`];
+
+// numbers.sort((a, g,) => {
+//   return g - a;
+// });
+// console.log(numbers);
+
+// **********************************************
+
+// const letters = [1, 5, 3, 9];
+
+//  letters.sort();
+
+// const copy = [...letters];
+// console.log(`copy`, copy);
+// console.log(`numbers`, numbers);
+// *********************************************
+// Делает реверс масива по убыванию и возростанию
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const deakSort = [...numbers].sort((a, b) => b - a);
+// const ascSort = [...numbers].sort((a, b) => a - b);
+
+// console.log(`deakSort`, deakSort);
+// console.log(`ascSort`, ascSort);
+// Делает реверс масива по убыванию и возростанию
+// console.log([1, 2, 3, 4, 5].reverse());
+
+// *************************************************
+
+
+// const players = [
+//   { id: `player-1`, name: `Mango`, timePlayed: 310, online: false },
+//   { id: `player-2`, name: `Poly`, timePlayed: 450, online: true },
+//   { id: `player-3`, name: `Kivi`, timePlayed: 680, online: false },
+//   { id: `player-4`, name: `Ajax`, timePlayed: 240, online: true },
+//   { id: `player-5`, name: `Chelsy`, timePlayed: 910, online: false },
+// ];
+
+
+// const a = [...players].sort((d, f) => {
+//   return d.timePlayed - f.timePlayed;
+// });
+// console.table(a);
+// ***************************************************
+
+// Свойство flat разглаживает вложенность:
+
+// const array = [1, 2, [4, [5]], [6, [7, 8, [9]]]];
+// console.log(array.flat(2));
+// *****************************************************
+
+// const tweets = [
+//   { id: `000`, likes: 5, tags: [`js`, `nodejs`] },
+//   { id: `000`, likes: 5, tags: [`jt`, `nodels`] },
+//   { id: `000`, likes: 5, tags: [`jn`, `nodegs`] },
+//   { id: `000`, likes: 5, tags: [`je`, `nodeds`] },
+
+// ];
+
+
+// const tags = tweets.map(t => t.tags).flat();
+// console.log(t => t.tags);
+
+
+// const numbers = [1, 2, 5, 7, 9, 99, 32, 90, 43];
+
+// const a = numbers.filter(function (num) {
+//   return num > 5;
+// });
+// console.log(a);
+
+// const pereb = a.map(t => t * 3);
+// console.log(pereb);
+
+// const sorted = pereb.sort((d, v) => d - v);
+// console.log(sorted);
+
+
+// аналог предыдущей записи:
+
+// const df = numbers
+//   .filter(num => num > 2)
+//   .map(num => num * 2)
+//   .sort((a, b) => a - b);
+
+
+// console.log(df);
+
+// ***************************
+
+const playesr = [
+  { id: `id-1`, tag: `Mango`, isOnline: true, rang: 800 },
+  { id: `id-2`, tag: `Poly`, isOnline: false, rank: 600 },
+  { id: `id-3`, tag: `Ajax`, isOnline: true, rank: 100 },
+  {id: `id-4`, tag: `Fax`, isOnline: false, rank: 526},
+];
+
+const adf = playesr
+  .filter(players => players.isOnline)
+  .sort((playerA, playerB) => playerB.rank - playerA.rank);
+
+
+
+console.table(adf);
