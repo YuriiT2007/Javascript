@@ -2885,17 +2885,127 @@
 
 // ***************************
 
-const playesr = [
-  { id: `id-1`, tag: `Mango`, isOnline: true, rang: 800 },
-  { id: `id-2`, tag: `Poly`, isOnline: false, rank: 600 },
-  { id: `id-3`, tag: `Ajax`, isOnline: true, rank: 100 },
-  {id: `id-4`, tag: `Fax`, isOnline: false, rank: 526},
-];
+// const playesr = [
+//   { id: `id-1`, tag: `Mango`, isOnline: true, rang: 800 },
+//   { id: `id-2`, tag: `Poly`, isOnline: false, rank: 600 },
+//   { id: `id-3`, tag: `Ajax`, isOnline: true, rank: 100 },
+//   {id: `id-4`, tag: `Fax`, isOnline: false, rank: 526},
+// ];
 
-const adf = playesr
-  .filter(players => players.isOnline)
-  .sort((playerA, playerB) => playerB.rank - playerA.rank);
+// const adf = playesr
+//   .filter(players => players.isOnline)
+//   .sort((playerA, playerB) => playerB.rank - playerA.rank);
 
 
 
-console.table(adf);
+// console.table(adf);
+
+
+// *****************************************
+
+// const tags = tweets.flatMap(t => t.tags);
+// console.log(tags);
+
+
+// const stats = tags.reduce((acc, tag) => {
+//   return {
+//     ...acc,
+//     [tag]: acc[tag] ? acc[tag] + 1 : 1,
+//   };
+// }, {});
+
+// console.log(stats);
+
+// *************************************************
+// Редюс
+// const total = [2, 7, 3, 45, 65].reduse((previousValue, number) => {
+//   return previousValue + number;
+// }, 0);
+// console.log(total);
+
+// const total = [2, 7, 3, 14, 6].reduse((previousValue, number) => {
+//   return previousValue + number;
+// }, 0);
+
+// console.log(total); // 32
+
+
+// *********************************************
+
+
+// const student = [
+//   { name: "Манго", score: 83 },
+//   { name: "Poli", score: 59 },
+//   { name: "Kivi", score: 87 },
+//   { name: "Madet", score: 58 },
+
+// ];
+
+// const totalScore = student.reduce((a, student) => {
+//   return a + student.score;
+// }, 0);
+
+// console.log(student.score);
+
+// ******************************************
+
+// const numbers = [5, 45, 54, 78, 51, 4];
+
+// for (let i = 2; i < numbers.length; i += 1) {
+//   console.log(`Индекс ${i}, значение ${numbers[i]}`);
+//   console.log(numbers[i]);
+// }
+
+
+// numbers.forEach(function (number, index) {
+//   console.log(`Индекс ${index}, значение ${number}`);
+
+// });
+
+
+
+// function makePizza() {
+//   return "Your pizza is being prepared, please wait.";
+// }
+// // Change code below this line
+
+// const result = function makePizza();
+// const pointer = null;
+
+// **************************************************
+//   Задачи 4 модуль 48 шт
+// **************************************************
+//2. Дополни функцию makeMessage так, чтобы она ожидала вторым параметром (параметр callback) колбэк-функцию и возвращала ее вызов. Функция deliverPizza или makePizza будет передаваться как колбэк и ожидать аргументом имя готовой доставляемой пиццы.
+
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName,callback ) {
+//   return callback(pizzaName);
+// // }
+// ***************************************************
+
+//3. Дополни второй вызов функции makePizza(pizzaName, callback), передав вторым аргументом инлайн колбэк-функцию eatPizza(pizzaName), которая логирует строку "Eating pizza <имя пиццы>".
+
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+
+// makePizza("Ultracheese", function eatPizza(pizzaName) {
+//   console.log(`Eating pizza ${pizzaName}`)
+// });
+
+// *************************************************************
+
