@@ -3008,11 +3008,11 @@
 // });
 
 // *************************************************************
-4.Необходимо написать логику обработки заказа пиццы. Выполни рефакторинг метода order так, чтобы он принимал вторым и третим параметрами два колбэка onSuccess и onError.
+// 4.Необходимо написать логику обработки заказа пиццы. Выполни рефакторинг метода order так, чтобы он принимал вторым и третим параметрами два колбэка onSuccess и onError.
 
-Если в свойстве pizzas нет пиццы с названием из параметра pizzaName, метод order должен возвращать результат вызова колбэка onError, передавая ему аргументом строку "There is no pizza with a name <имя пиццы> in the assortment."
-Если в свойстве pizzas есть пицца с названием из параметра pizzaName, метод order должен возвращать результат вызова колбэка onSuccess, передавая ему аргументом имя заказанной пиццы.
-После объявления объекта pizzaPalace мы добавили колбэки и вызовы методов. Пожалуйста ничего там не меняй.
+// Если в свойстве pizzas нет пиццы с названием из параметра pizzaName, метод order должен возвращать результат вызова колбэка onError, передавая ему аргументом строку "There is no pizza with a name <имя пиццы> in the assortment."
+// Если в свойстве pizzas есть пицца с названием из параметра pizzaName, метод order должен возвращать результат вызова колбэка onSuccess, передавая ему аргументом имя заказанной пиццы.
+// После объявления объекта pizzaPalace мы добавили колбэки и вызовы методов. Пожалуйста ничего там не меняй.
 
 // *****************************************************************
 
@@ -3045,3 +3045,157 @@
 // pizzaPalace.order('Vienna', makePizza, onOrderError);
 
 // **************************************************************************
+// 5.  Функция calculateTotalPrice(orderedItems) принимает один параметр orderedItems - массив чисел, и рассчитывает общую сумму его элементов, которая сохраняется в переменной totalPrice и возвращается как результат работы функции.
+
+// Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
+// for (let i = 0; i < orderedItems.length; i += 1) {
+//     totalPrice += orderedItems[i];
+// };
+
+//   // Change code above this line
+//   // return totalPrice;
+// console.log(totalPrice);
+
+
+// const orderedItems = [5, 10, 15, 20, 25];
+
+// // Классический for
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //   console.log(numbers[i]);
+// // }
+
+// // numbers.forEach(function (number, index) {
+// //   console.log(`Индекс ${index}, значение ${number}`);
+// // });
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   // for (let i = 0; i < orderedItems.length; i += 1) {
+//   //   totalPrice += orderedItems[i];
+//   // }
+
+//   orderedItems.forEach(function (orderedItem, index) {
+//    return totalPrice += orderedItem;
+//   });
+
+
+
+//   // Change code above this line
+//   console.log(totalPrice);
+// }
+
+// calculateTotalPrice(orderedItems)
+// **************************************************
+// 6. Функция filterArray(numbers, value) принимает массив чисел numbers и возвращает новый массив, в котором будут только те элементы оригинального массива, которые больше чем значение параметра value.
+
+// Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
+
+
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   if (numbers[i] > value) {
+//   //     filteredNumbers.push(numbers[i]);
+//   //   }
+//   // }
+//   numbers.forEach(function (number) {
+
+//     if ( number > value) {
+//        filteredNumbers.push(number);
+//     }
+//     return filteredNumbers;
+//   });
+
+
+
+//   // Change code above this line
+//  console.log(filteredNumbers);
+// }
+
+// filterArray([5, 10, 15, 20, 25], 7)
+
+// ********************************************************
+
+
+// 7. Функция getCommonElements(firstArray, secondArray) принимает два массива произвольной длины в параметры firstArray и secondArray, и возвращает новый массив их общих элементов, то есть тех которые есть в обоих массивах.
+
+// Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+  // Change code below this line
+
+  // for (let i = 0; i < firstArray.length; i += 1) {
+  //   if (secondArray.includes(firstArray[i])) {
+  //     commonElements.push(firstArray[i]);
+  //   }
+  // }
+
+  // firstArray.forEach(function (namberfirstArray) {
+  //   if (secondArray.includes(namberfirstArray)) {
+  //     commonElements.push(namberfirstArray);
+  //   }
+  //   return commonElements;
+  // });
+
+//   function getCommonElements(firstArray, secondArray) {
+//     const commonElements = [];
+//     // Change code below this line
+
+//     firstArray.forEach(function (namfirstArray) {
+//       if (secondArray.includes(namfirstArray)) {
+//         commonElements.push(namfirstArray);
+//       }
+      
+//     });
+     
+ 
+
+
+
+ 
+//     // Change code above this line
+//   }
+
+// console.log(commonElements);
+
+// }
+//   getCommonElements([1, 2, 3], [2, 1, 17, 19]);
+
+// *********************************************************
+// 8. Выполни рефакторинг функции calculateTotalPrice() так, чтобы она была объявлена как стрелочная.
+
+// // Change code below this line
+
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   // Change code above this line
+//   return quantity * pricePerItem;
+// }
+
+// *************************************************************
+// 9.Выполни рефакторинг функции calculateTotalPrice() так, чтобы она использовала неявный возврат.
+// // Change code below this line
+// const calculateTotalPrice = (quantity, pricePerItem) =>
+//    quantity * pricePerItem;
+  
+// *********************************************************************
+// 10.Выполни рефакторинг функции calculateTotalPrice(orderedItems) заменив её объявление на стрелочную функцию. Замени коллбек-функцию передаваемую в метод forEach() на стрелочную функцию.
+
+// // Change code below this line
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach( (item) => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// }
+// // Change code above this line
