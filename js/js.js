@@ -3199,3 +3199,206 @@
 //   return totalPrice;
 // }
 // // Change code above this line
+// **************************************************************
+// 11. Замени объявление функции filterArray() и коллбек для метода forEach() на стрелочные функции.
+
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   console.log(filteredNumbers);
+// }
+
+// filterArray([1, 2, 3, 4, 5], 3)
+
+
+// 12. Замени объявление функции getCommonElements() и коллбек для метода forEach() на стрелочные функции.
+
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach( (element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// }
+// 13. Функция changeEven(numbers, value) принимает массив чисел numbers и обновляет каждый элемент, значение которого это чётное число, добавляя к нему значение параметра value.
+
+// Выполни рефакторинг функции так, чтобы она стала чистой - не изменяла массив чисел numbers, а создавала, наполняла и возвращала новый массив с обновлёнными значениями.
+
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   if (numbers[i] % 2 === 0) {
+//   //     numbers[i] = numbers[i] + value;
+//   //   }
+//   //   console.log(numbers[i])
+//   // }
+//   const newArray = [];
+//   numbers.forEach( (number) => {
+//     if(number % 2 === 0) {
+//    newArray.push(number + value);
+//     }
+//     console.log(newArray)
+// })
+  
+
+
+
+// //   // Change code above this line
+// }
+
+// changeEven([1, 2, 3, 4, 5], 10)
+
+
+
+// const pureMultiply = (numbers, value) => {
+//   const newArray = [];
+//   number.forEach(number => {
+//     if (number % 2 === 0) {
+//       newArray.push(number + value);
+//     }
+//     });
+//   console.log(newArray)
+// }
+
+// const numbers = [1, 2, 3, 4, 9];
+// pureMultiply(numbers, 2);
+
+
+// const pureMultiply = (array, value) => {
+//   const newArray = [];
+
+//   array.forEach(element => {
+//     if (element % 2 === 0) {
+//      newArray.push(element * value);
+//     }
+    
+//   });
+
+//   console.log(newArray);
+// };
+
+// const numbers = [1, 2, 3, 4, 9];
+// pureMultiply(numbers, 2);
+
+
+
+
+// const changeEven = (numbers, value) => {
+//   const newArray = [];
+//   // Change code below this line
+//   numbers.forEach(number => {
+//     if (number % 2 === 0) {
+//       newArray.push(number + value);
+//     }
+//     else {
+//       newArray.push(number)
+//     }
+//   });
+//  return newArray;
+
+// };
+
+
+// changeEven([1, 2, 3, 4, 5], 10)
+
+
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       numbers[i] = numbers[i] + value;
+//     }
+//      console.log(numbers[i]);
+//   }
+ 
+//   // Change code above this line
+// }
+
+// changeEven([44, 13, 81, 92, 36, 54], 100)
+
+// 13. Функция changeEven(numbers, value) принимает массив чисел numbers и обновляет каждый элемент, значение которого это чётное число, добавляя к нему значение параметра value.
+
+// Выполни рефакторинг функции так, чтобы она стала чистой - не изменяла массив чисел numbers, а создавала, наполняла и возвращала новый массив с обновлёнными значениями.
+
+// const changeEven = (numbers, value) => {
+//   const newArray = [];
+//   // Change code below this line
+//   numbers.forEach(number => {
+//     if (number % 2 === 0) {
+//       newArray.push(number + value);
+//     }
+//     else {
+//       newArray.push(number)
+//     }
+//   });
+//  return newArray;
+
+// };
+
+
+// changeEven([1, 2, 3, 4, 5], 10)
+
+// *************************************************
+
+// 14 Дополни код так, чтобы в переменной planetsLengths получился массив длин названий планет. Обязательно используй метод map().
+// const planets = ["Ptvkz", "Mars", "Venera", "Юпитер"];
+
+// const a = planets.map(planet => planet.length);
+// console.log(a);
+
+// *************************************************
+
+const students = [
+  { name: "Mango", score: 83 },
+  { name: "Poly", score: 59 },
+  { name: "Poly", score: 94 },
+  { name: "Voly", score: 94 },
+];
+
+const names = students.map(student => student.name);
+console.log(names);
+
+15.Используя метод map() сделай так, чтобы в переменной titles получился массив названий книг (свойство title) из всех объектов массива books.
+
+
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+];
+// Change code below this line
+
+
+
+
+const titles = books.map(a => a.title);
