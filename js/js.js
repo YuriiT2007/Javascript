@@ -3469,3 +3469,57 @@
 
 //   const a = users.map(user => user.name)
 // console.log( a);
+
+// ***************************************************
+
+// Дополни функцию getUserEmails(users) так, чтобы она возвращала массив почтовых адресов пользователей (свойство email) из массива объектов в параметре users.
+
+// const getUserEmails = users => {
+//  const a = users.map(user => user.email)
+// return a;
+//   };
+//   // Change c
+
+// ****************************************************
+
+// 19. Дополни код так, чтобы в переменной evenNumbers получился массив чётных чисел из массива numbers, а в переменной oddNumbers массив нечётных. Обязательно используй метод filter().
+
+// const values = [51, -3, 27, 21, -68, 42, -37];
+
+// const positiveValues = values.filter(value => value % 2 === 0);
+// console.log(positiveValues);
+
+
+// const negativeValues = values.filter(value => value < 0);
+// console.log(negativeValues);
+
+
+// const bigValues = values.filter(value => value > 1000);
+// console.log(bigValues);
+// *****************************************************
+
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
+
+// const evenNumbers = numbers.filter(number => number % 2 === 0);  [17, 61, 47, 73]
+// console.log(evenNumbers);
+
+// const oddNumbers = numbers.filter(a => a % 2 !== 0);
+// console.log(oddNumbers);
+
+// ********************************************************
+// 20. Дополни код так, чтобы в переменной allGenres был массив всех жанров книг (свойство genres) из массива books, а в переменной uniqueGenres массив уникальных жанров - без повторений.
+const students = [
+  { name: "Mango", courses: ["mathematics", "physics"] },
+  { name: "Poly", courses: ["science", "mathematics"] },
+  { name: "Kivi", courses: ["physics", "biology"] },
+];
+
+const allCourses = students.flatMap(student => student.courses);
+
+console.log(allCourses);
+
+
+const uniqueCourses = allCourses.filter((course, index, array) => array.indexof(course) === index);
+
+console.log(uniqueCourses);
