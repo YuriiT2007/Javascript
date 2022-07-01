@@ -3496,8 +3496,21 @@
 
 // const bigValues = values.filter(value => value > 1000);
 // console.log(bigValues);
-// *****************************************************
+// ****************************************************
 
+// const values = [51, -3, 27, 21, -68, 42, -37];
+
+
+// const positiveValues = values.filter(value => value < 0);
+
+// console.log(positiveValues);
+
+
+// const negativeValues = values.filter(value => value > 0);
+
+// console.log(negativeValues);
+
+// ******************************************************************
 // const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
 // // Change code below this line
 
@@ -3508,18 +3521,86 @@
 // console.log(oddNumbers);
 
 // ********************************************************
+
+// const numbers = [17, 24, 82, 61, 47, 52, 73];
+
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+
+// console.log(evenNumbers);
+
+
+
+// const oddNumbers = numbers.filter(number => number % 2 !== 0);
+
+// console.log(oddNumbers);
+
+// *********************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 20. Дополни код так, чтобы в переменной allGenres был массив всех жанров книг (свойство genres) из массива books, а в переменной uniqueGenres массив уникальных жанров - без повторений.
-const students = [
-  { name: "Mango", courses: ["mathematics", "physics"] },
-  { name: "Poly", courses: ["science", "mathematics"] },
-  { name: "Kivi", courses: ["physics", "biology"] },
-];
+// const students = [
+//   { name: "Mango", courses: ["mathematics", "physics"] },
+//   { name: "Poly", courses: ["science", "mathematics"] },
+//   { name: "Kivi", courses: ["physics", "biology"] },
+// ];
 
-const allCourses = students.flatMap(student => student.courses);
+// const allCourses = students.flatMap(student => student.courses);
 
-console.log(allCourses);
+// console.log(allCourses);
 
 
-const uniqueCourses = allCourses.filter((course, index, array) => array.indexof(course) === index);
+// const uniqueCourses = allCourses.filter( a, d, c, => allCourses.indexof(d) === index);
 
-console.log(uniqueCourses);
+// console.log(uniqueCourses);
+
+
+// const students = [
+//   { name: "Mango", courses: ["mathematics", "phisics"] },
+//   { name: "Mango", courses: ["science" "mathematics"] },
+//   { name: "Kivi", courses: ["phisics", "biologi"] },
+// ];
+
+
+// const allCourses = students.flatMap(student => student.courses);
+
+// console.log(allCourses);
+
+// const uniqueCourse = allCourses.filter(a, b, c => allCourses.indexof(b) === index);
+
+// console.log(allCourses);
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction", "mysticim"],
+//   },
+//   {
+//     title: "redder That Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism"],
+//   },
+// ];
+
+// const allGenres = books.flatMap(book => book.genres);
+// console.log(allGenres);
+// const uniqueGenres = allGenres;
